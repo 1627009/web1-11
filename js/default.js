@@ -1,5 +1,5 @@
 var number = Math.floor(Math.random()*3);
-var trueFlag = FALSE;
+var trueFlag = 0;
 
 while(trueFlag === TRUE)
 {
