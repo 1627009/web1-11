@@ -5,7 +5,7 @@ var min = 0;
 
 while(1)
 {
-  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！',number));
+  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！'/*,number*/));
 
   var message;
   if(answer === number)
