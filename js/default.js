@@ -8,7 +8,6 @@ while(1)
   if(answer === number)
   {
     message = 'あたり';
-    document.getElementById('choice').textContent = message;
     break;
   }
   else if(answer < number)
@@ -26,3 +25,4 @@ while(1)
   else
     break;
 }
+document.getElementById('choice').textContent = message;
