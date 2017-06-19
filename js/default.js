@@ -8,14 +8,15 @@ while(1)
   var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！'/*,number*/));
 
   var message;
-  if(answer === number)
+
+  if(answer < min && answer > max)
   {
-    message = 'あたり';
-    break;
-  }
-  else if(answer < min && answer > max)
-  {
-    if(answer < number)
+    if(answer === number)
+    {
+      message = 'あたり';
+      break;
+    }
+    esle if(answer < number)
       result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
     else if(answer > number)
       result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
