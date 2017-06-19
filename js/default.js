@@ -12,7 +12,7 @@ while(1)
     message = 'あたり';
     break;
   }
-  else if(min <= answer <= max)
+  else if(min - 1 < answer < max + 1)
   {
     if(answer < number)
       result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
