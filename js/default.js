@@ -23,4 +23,5 @@ while(1)
   }
 
   document.getElementById('choice').textContent = message;
+  getchar();
 }
