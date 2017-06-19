@@ -11,17 +11,11 @@ while(1)
     break;
   }
   else if(answer < number)
-  {
     message = '残念、もっと大きいよ';
-  }
   else if(answer > number)
-  {
     message = '残念、もっと小さいよ';
-  }
   else
-  {
     message = '0~2の数字を入力してね';
-  }
 
   document.getElementById('choice').textContent = message;
   
