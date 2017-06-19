@@ -11,15 +11,14 @@ while(1)
     break;
   }
   else if(answer < number)
-    message = '残念、もっと大きいよ';
+    result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
   else if(answer > number)
-    message = '残念、もっと小さいよ';
+    result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
   else
-    message = '0~2の数字を入力してね';
+    result = window.confirm('0~2の数字を入力してね\nこのまま続ける？');
 
   document.getElementById('choice').textContent = message;
   
-  result = window.confirm('このまま続ける？');
   if(result === true)
     result = 0;
   else
