@@ -16,7 +16,7 @@ while(1)
       message = 'あたり';
       break;
     }
-    esle if(answer < number)
+    else if(answer < number)
       result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
     else if(answer > number)
       result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
