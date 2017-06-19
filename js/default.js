@@ -14,13 +14,10 @@ while(1)
      message = 'あたり';
      break;
    }
-  else if(answer < min && answer > max)
-  {
-    if(answer < number)
-      result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
-    else if(answer > number)
-      result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
-  }
+  else if(answer < number)
+    result = window.confirm('残念、もっと大きいよ\nこのまま続ける？')
+  else if(answer > number)
+    result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
   else
     result = window.confirm('0~99の数字を入力してね\nこのまま続ける？');
 
