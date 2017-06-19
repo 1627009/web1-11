@@ -4,7 +4,7 @@ var max = 99;
 var min = 0;
 while(1)
 {
-  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！\n%d',answer));
+  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！\n%d',number));
 
   var message;
   if(answer === number)
@@ -12,10 +12,13 @@ while(1)
     message = 'あたり';
     break;
   }
-  else if(answer < number < max)
-    result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
-  else if(answer > number > min)
-    result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
+  else if(min <= answer <= max)
+  {
+    if(answer < number)
+      result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
+    else if(answer > number)
+      result = window.confirm('残念、もっと小さいよ\nこのまま続ける？');
+  }
   else
     result = window.confirm('0~99の数字を入力してね\nこのまま続ける？');
 
