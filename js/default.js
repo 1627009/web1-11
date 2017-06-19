@@ -1,7 +1,5 @@
 var number = Math.floor(Math.random()*3);
-var trueFlag = 0;
-
-while(trueFlag === 1)
+while(1)
 {
   var answer = parseInt(window.prompt('数当てゲーム！0~2の数字を入力してください！'));
 
@@ -9,7 +7,7 @@ while(trueFlag === 1)
   if(answer === number)
   {
     message = 'あたり';
-    trueFlag = 1;
+    break;
   }
   else if(answer < number)
   {
