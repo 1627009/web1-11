@@ -17,8 +17,6 @@ while(1)
   else
     result = window.confirm('0~99の数字を入力してね\nこのまま続ける？');
 
-  document.getElementById('choice').textContent = message;
-  
   if(result === true)
     result = 0;
   else
