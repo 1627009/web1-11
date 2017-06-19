@@ -2,9 +2,10 @@ var number = Math.floor(Math.random()*100);
 var result = 0;
 var max = 99;
 var min = 0;
+
 while(1)
 {
-  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！\n%d',number));
+  var answer = parseInt(window.prompt('数当てゲーム！0~99の数字を入力してください！',number));
 
   var message;
   if(answer === number)
@@ -12,7 +13,7 @@ while(1)
     message = 'あたり';
     break;
   }
-  else if(min - 1 < answer < max + 1)
+  else if(answer < min || answer > max)
   {
     if(answer < number)
       result = window.confirm('残念、もっと大きいよ\nこのまま続ける？');
